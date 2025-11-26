@@ -1,0 +1,53 @@
+/* src/components/Header.module.css */
+
+/* 헤더 전체 틀 */
+.header {
+  /* 1. 크기 및 위치 설정 */
+  width: 100%;             /* 가로폭을 화면 끝까지 꽉 채움 */
+  height: 80px;            /* 헤더 높이 고정 (원하는 만큼 조절 가능) */
+  padding: 0 65px;         /* 내부 여백: 위아래 0, 좌우 40px (글씨가 너무 벽에 붙지 않게) */
+  
+  /* 2. 배치 설정 (Flexbox - 중요! ⭐) */
+  display: flex;           /* 내용물들을 가로로 나란히 배치하겠다 */
+  justify-content: space-between; /* 내용물들을 양쪽 끝으로 쫙 벌려줌 (왼쪽 끝, 오른쪽 끝) */
+  align-items: center;     /* 내용물들을 세로 기준 정중앙에 오게 함 */
+
+  /* 3. 디자인 (색상 등) */
+  background-color: #ffffff; /* 배경색: 사진처럼 예쁜 코랄색 (원하면 white로 변경) */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 아래쪽에 살짝 그림자 줘서 입체감 주기 */
+  
+  /* 4. 스크롤 해도 위에 붙어있게 하기 */
+  position: sticky;        /* 스크롤 내려도 화면에 붙어있음 */
+  top: 0;                  /* 화면 맨 꼭대기에 고정 */
+  z-index: 100;            /* 다른 요소들보다 무조건 위에 오게 함 (안 가려지게) */
+  box-sizing: border-box;  /* 테두리나 패딩 때문에 사이즈가 커지지 않게 계산 */
+}
+
+/* 왼쪽 로고 글씨 스타일 */
+.logo {
+  font-size: 2rem;       /* 글씨 크기 키움 (기본보다 1.8배) */
+  font-weight: bold;       /* 글씨 두껍게 */
+  color: rgb(0, 0, 0);            /* 글씨 색상 흰색 */
+  cursor: pointer;         /* 마우스 올리면 손가락 모양 나오게 */
+}
+
+/* 오른쪽 메뉴 영역 */
+.nav {
+  display: flex;           /* 메뉴가 여러 개일 경우 가로로 배치 */
+  gap: 20px;               /* 메뉴 간의 간격 20px */
+}
+
+/* 로그인 버튼 스타일 */
+.loginButton {
+  background: none;        /* 배경 없애기 (투명) */
+  border: none;            /* 테두리 없애기 */
+  color: rgb(0, 0, 0);            /* 글씨 색상 */
+  font-size: 1rem;       /* 글씨 크기 */
+  font-weight: bold;       /* 글씨 두껍게 */
+  cursor: pointer;         /* 손가락 모양 */
+}
+
+/* 마우스 올렸을 때 로그인 버튼 효과 (선택사항) */
+.loginButton:hover {
+  opacity: 0.8;            /* 약간 투명해지면서 눌리는 느낌 줌 */
+}

@@ -1,0 +1,17 @@
+/* src/App.css */
+
+.app-container {
+  width: 100vw;        /* 화면 너비 100% */
+  min-height: 100vh;   /* 화면 높이 100% */
+  margin: 0;           /* 바깥 여백 제거 */
+  padding: 0;          /* ⭐ 범인 검거! 안쪽 여백을 0으로 만들어야 헤더가 벽에 붙습니다 */
+  overflow-x: hidden;  /* 가로 스크롤 방지 */
+}
+
+/* 이제 헤더는 꽉 차고, 내용물(Main)만 여백을 따로 줄 겁니다 */
+main {
+  width: 100%;
+  max-width: 100%;    /* 내용은 너무 퍼지지 않게 중앙 정렬 (선택사항) */
+  margin-bottom: 10px;      /* 내용만 가운데 정렬 */
+  padding: 0px;       /* 내용물에만 여백 주기 */
+}
