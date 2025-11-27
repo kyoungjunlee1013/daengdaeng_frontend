@@ -39,3 +39,21 @@
     z-index: 10;        /* 이미지보다 위에 오도록 순서 지정 */
     padding: 0 20px;    /* 모바일에서 좌우 여백 확보 */
 }
+
+.reviewSection {
+    position: absolute;
+    margin-top: 35px;
+    width: 1220px;
+    height: 500px;
+    left: 50%; /*보더 왼쪽을 기준으로 웹사이트 절반으로*/
+    transform: translateX(-50%);/*보더의 절반만큼 되돌리기*/
+}
+
+.review_text {
+    font: 10px;
+    color: grey;
+    position: relative;
+    left: 100%;
+    transform: translateX(-8%);
+    top: 3%;
+}

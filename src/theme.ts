@@ -1,9 +1,10 @@
+// 전체페이지, MUI 관련 폰트를 하나로 만들기 위한 파일
 import { createTheme } from "@mui/material";
 
 export const theme = createTheme({
 
     typography: {
-        //mui의 모든 폰트를 통일한다.
+        
         fontFamily: '"Gowun Batang", serif',
     },
     palette: {
