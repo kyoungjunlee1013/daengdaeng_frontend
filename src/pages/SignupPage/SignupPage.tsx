@@ -6,6 +6,9 @@ import { ThemeProvider, createTheme } from '@mui/material/styles'; // 테마 임
 
 // 미니멀리즘 스타일을 위한 커스텀 테마 (입력 필드 밑줄 스타일)
 const minimalistTheme = createTheme({
+    typography: {
+        fontFamily: '"Gowun Batang", serif',
+    },
     components: {
         MuiTextField: {
             defaultProps: {
